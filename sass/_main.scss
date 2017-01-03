@@ -1,0 +1,352 @@
+/* HSL */
+$color1: hsla(288%, 54%, 50%, 1);
+$color2: hsla(253%, 26%, 18%, 1);
+$color3: hsla(224%, 14%, 22%, 1);
+$color4: hsla(240%, 100%, 99%, 1);
+$color5: hsla(257%, 100%, 93%, 1);
+
+/* RGB */
+$color1: rgba(168, 58, 196, 1);
+$color2: rgba(39, 34, 58, 1);
+$color3: rgba(48, 52, 63, 1);
+$color4: rgba(250, 250, 255, 1);
+$color5: rgba(228, 217, 255, 1);
+
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+body {
+  padding-top: 50px;
+
+}
+
+
+
+//modificaciones para el menu
+.navbar{
+  background:$color2;
+}
+#main-logo{
+  width: 50px;
+  padding-top: 1px;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+} 
+.brand-name{
+ font-family: Righteous;
+ 
+ font-size:25px;
+ span{
+  color:white;
+ }
+ .scarpe{
+  color:$color1;
+  display: inline-block;
+ }
+}
+
+
+
+//slider
+.carousel-control.left {
+  background-image: none;
+}
+.carousel-control.right {
+  background-image: none;
+}
+.sliderfotos{
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.nuestrosproductos{
+  font-family: Righteous;
+  font-size: 30px;
+  color:$color1;
+  padding: 40px 0;
+}
+
+
+
+//PRODUCTOS
+.producto{
+    position:relative;
+    border:solid 2px white;
+    border-radius:2%;
+    height: 350px;
+  .precio{
+    color:$color1;
+    position: absolute;
+    top:8%;
+    left: 8%;
+    font-size: 20px;
+    font-family: Righteous, calibri, sans-serif;
+
+  }
+  .talles{
+    color:$color3;
+    position: absolute;
+    top:2%;
+    left: 3%;
+    font-size: 15px;
+    font-family: calibri, sans-serif;
+  }
+  img{
+    cursor:pointer;
+    max-width:94%;
+    margin-top: 30px;
+    max-height: 284px;
+
+  }
+  &:hover{
+    border:solid 2px $color1;
+    .botones{
+      display: block;
+      top:307px;
+      left: 64%;
+    }
+    
+  }
+  
+  .botones{
+     position:absolute;
+     display: none;
+     width: 100px; 
+     height: 25px;
+     background:$color1;
+     border-radius:4px;
+     text-align:center;
+     padding:2px;
+     text-decoration: none;
+     color: white;
+     -webkit-animation-name: zoom;
+     -webkit-animation-duration: 0.6s;
+     animation-name: zoom;
+     animation-duration: 0.6s;
+     &:hover{
+      background:$color3;
+      }     
+   }
+   .detallefoto{
+    position:absolute;
+    font-family: calibri,sans-serif;
+    font-size: 15px;
+    color:$color3;
+    top:90%;
+    left:5%;
+
+   }
+   .colornegro{
+    width: 30px;
+    height: 20px;
+    border-radius:1px;
+    border:1px solid gray;
+    background:black;
+    position:absolute;
+    top:25px;
+    left: 85%;
+    &:hover{
+      border:1px solid $color1;
+    }
+   }
+   .colorsuela{
+    width: 30px;
+    height: 20px;
+    border-radius:1px;
+    border:1px solid gray;
+    background:#FFBF00;
+    position:absolute;
+    top:50px;
+    left: 85%;
+    &:hover{
+      border:1px solid $color1;
+    }
+   }
+   .colorceleste{
+    width: 30px;
+    height: 20px;
+    border-radius:1px;
+    border:1px solid gray;
+    background:cyan;
+    position:absolute;
+    top:25px;
+    left: 85%;
+    &:hover{
+      border:1px solid $color1;
+    }
+   }
+   .colorblanco{
+    width: 30px;
+    height: 20px;
+    border-radius:1px;
+    border:1px solid gray;
+    background:white;
+    position:absolute;
+    top:50px;
+    left: 85%;
+    &:hover{
+      border:1px solid $color1;
+    }
+   }
+   .colorfucsia{
+    width: 30px;
+    height: 20px;
+    border-radius:1px;
+    border:1px solid gray;
+    background:#FE2EF7;
+    position:absolute;
+    top:50px;
+    left: 85%;
+    &:hover{
+      border:1px solid $color1;
+    }
+   }
+   .colorrojo{
+    width: 30px;
+    height: 20px;
+    border-radius:1px;
+    border:1px solid gray;
+    background:red;
+    position:absolute;
+    top:50px;
+    left: 85%;
+    &:hover{
+      border:1px solid $color1;
+    }
+   }
+
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+
+
+//modal images
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9); 
+     img{
+    margin: auto;
+    display: block;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    max-width: 600px;
+    max-height:500px;
+  }
+  span{
+    color:white;
+    font-size: 50px;
+    cursor:pointer;
+    
+    &:hover{
+      color:gray;
+    }
+  }
+  #closeimagen{
+    position:relative;
+    top: 10%;
+    left: 90%;
+  }
+  #imagenderecha{
+    position:relative;
+    top:300px;
+    left: 80%;
+  }
+  #imagenizquierda{
+    position:relative;
+    top:300px;
+    left: 10%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+//fotter
+.antefooter{
+  background:$color1;
+  height: 100px;
+  margin-top: 20px;
+  text-align: center;
+  height: 200px;
+  .newsletter{
+    padding-top:40px;
+  h5{
+    font-size: 20px;
+    
+    }
+  }
+}
+
+footer{
+  padding-top: 20px;
+  background:$color2;
+  font-size: 11px;
+
+  ul{
+    color:$color4;
+    list-style: none;
+    padding-top:5px;
+    }
+    .redes{
+      font-size: 20px;
+      padding-bottom:18px;
+      li{
+        border:2px solid $color4;
+        border-radius:50%;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        text-align: center;
+        color:$color4;
+        &:hover{
+          color:$color1;
+          border:2px solid $color1;
+        }
+        span{
+          position:relative;
+          top:5px;
+        }
+
+      }
+
+    }
+}
+
+
+
+
+
+
+
